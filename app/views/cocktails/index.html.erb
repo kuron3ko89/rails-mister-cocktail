@@ -1,4 +1,5 @@
-<h1><%= image_tag "banner.png", alt: "Cocktail Banner", width: 200 %></h1>
+<h1><%= cl_image_tag("https://res.cloudinary.com/ian-industries/image/upload/v1605842410/b3kn5dkrw9b8how8osdg.png",
+      width: 400, height: 300, crop: :fill) %></h1>
 
 <ul class="card-container">
   <% @cocktails.each do |cocktail| %>
