@@ -15,4 +15,8 @@ json_string['drinks'].each do |ingredient|
   Ingredient.create!(
     name: ingredient['strIngredient1']
   )
-end  
+end
+
+file = URI.open('https://res.cloudinary.com/ian-industries/image/upload/v1605842255/wbo7at9yezijixprciyy.png')
+cocktail = Cocktail.new(name: 'Asian Hooker')
+cocktail.photo.attach(io: file, filename: 'wbo7at9yezijixprciyy.png', content_type: 'image/png')

@@ -1,5 +1,6 @@
 <%= simple_form_for [ @cocktail] do |c| %>
   <%= c.input :name %>
+  <%= c.input :photo, as: :file %>
   <%= c.submit "Create cocktail", class: "btn btn-primary" %>
 <% end %>
 

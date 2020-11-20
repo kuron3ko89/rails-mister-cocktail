@@ -1,12 +1,13 @@
-.btn-add {
-  display:flex;
-  align-items: center;
+.button-container {
+  width: 100%;
   text-align: center;
-  justify-content: space-around;
+}
+
+.btn-add {
   background: linear-gradient(90deg, rgba(77,251,232,1) 0%, rgba(154,191,242,1) 50%, rgba(240,121,253,1) 100%);  
-  padding: 8px 8px;
+  padding: 15px 15px;
   border-radius: 10px;
-  margin: 0;
+  margin: 0 auto;
   font-family: $card-header-font;
   color: white;
   text-decoration: none;
